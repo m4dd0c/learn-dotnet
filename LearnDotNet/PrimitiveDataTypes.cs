@@ -4,7 +4,7 @@
 // ns name should be same as filename
 namespace LearnDotNet;
 
-public class PrintHello 
+public class PrimitiveDatatypes 
 {
     public static void Run()
     {

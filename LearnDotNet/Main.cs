@@ -6,8 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        PrintHello.Run();
-        // Console.WriteLine("=== Running Variables ===");
-        // Vars.Run();
+        PrimitiveDatatypes.Run();
     }
 }
