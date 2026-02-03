@@ -6,6 +6,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        PrimitiveDatatypes.Run();
+        // PrimitiveDatatypes.Run();
+        Branches.Run();
+        // NonPrimitiveDatatypes.Run();
     }
 }
