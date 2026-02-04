@@ -25,7 +25,30 @@ class NonPrimitiveDatatypes
         // struct, class
         // struct is value type and class is reference type
 
+        // Lists
+        List<string> names = ["Manish", "Nitesh", "Sumit", "Sandeep"];
+        Console.WriteLine($"Length of the List {names.Count}");
+        Console.WriteLine($"First element of the list: {names[0]}, IndexOf: {names.IndexOf("Mohit")}");
+        names.Add("M4dd0c");
+        names.Remove("Manish");
+        names.Insert(1, "Vinit");
+        names.Sort();
+        names.Reverse();
+        foreach (var n in names){
+            Console.WriteLine(n);
+        }
 
+        // Array
+        int[] numbers = [1, 2, 3, 4, 5];
+        int[] moreNumbers = [..numbers, 6,7];
+        foreach (var n in moreNumbers)
+            Console.WriteLine(n);
 
+        Console.WriteLine();
+
+        List<int> li = [1,2,3];
+        List<int> moreLi = [..li, 4, 5];
+        foreach(var l in moreLi)
+            Console.WriteLine(l);
     }
 }

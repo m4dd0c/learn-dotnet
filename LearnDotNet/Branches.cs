@@ -4,7 +4,7 @@ class Branches
 {
     public static void Run()
     {
-        Console.WriteLine("\n--------------Branches----------------");
+        Console.WriteLine("\n--------------If Else----------------");
         const string c = "Culprit";
 
         if(string.Equals(c, "culprit", StringComparison.OrdinalIgnoreCase))
@@ -14,6 +14,23 @@ class Branches
         else 
             Console.WriteLine("C might or might not be culprit");
         
+        Console.WriteLine("\n--------------Switch Case----------------");
+        byte num = 28;
+        switch (num)
+        {
+            case 18:
+                Console.WriteLine("User is 18");
+                break;
+            case > 18:
+                Console.WriteLine("User is Above 18");
+                break;
+            case < 18:
+                Console.WriteLine("User is below 18");
+                break;
+        }
+
+
+        Console.WriteLine("\n--------------Loops----------------");
         Console.WriteLine("While Loop");
         // while loop
         byte count = 0;
@@ -38,17 +55,9 @@ class Branches
         
         Console.WriteLine("Foreach Loop");
         List<string> names = ["Manish", "Nitesh", "Sumit", "Sandeep"];
-        Console.WriteLine($"Length of the List {names.Count}");
-        Console.WriteLine($"First element of the list: {names[0]}, IndexOf: {names.IndexOf("Mohit")}");
-        names.Add("M4dd0c");
-        names.Remove("Manish");
-        names.Insert(1, "Vinit");
-        names.Sort();
-        names.Reverse();
         foreach (string name in names)
         {
             Console.WriteLine(name);
         }
-
     }
 }
